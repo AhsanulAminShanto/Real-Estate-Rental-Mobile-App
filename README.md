@@ -85,7 +85,9 @@ lib/
 │ └── custom\_app\_bar.dart # Optional reusable AppBar widget
 
 └── main.dart # App entry point
+
 Assets are stored outside lib:
+
 textassets/
 
 └── data/
@@ -159,4 +161,5 @@ Integrate a real API instead of hardcoded JSON.
 Add location-based filtering in the dropdown.
 Implement "Rent Now" functionality with payment integration.
 Add user authentication and bookmark features.
+
 
