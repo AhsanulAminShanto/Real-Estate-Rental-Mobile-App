@@ -11,47 +11,87 @@ Responsive Design: Optimized for mobile screens with a clean UI.
 
 File Structure
 All source code is organized under the lib directory:
-textlib/
+
+lib/
+
 ├── core/
-│   ├── constants/
-│   │   └── app_colors.dart          # Defines app color constants
-│   ├── di/
-│   │   └── home_binding.dart        # Dependency injection configuration
-│   ├── router/
-│   │   └── app_router.dart          # Go Router configuration
-│   ├── theme/
-│   │   └── app_theme.dart           # App theme settings
-│   └── utils/
-│       └── helpers.dart             # Optional utility functions
+
+│ ├── constants/
+
+│ │ └── app\_colors.dart # Defines app color constants
+
+│ ├── di/
+
+│ │ └── home\_binding.dart # Dependency injection configuration
+
+│ ├── router/
+
+│ │ └── app\_router.dart # Go Router configuration
+
+│ ├── theme/
+
+│ │ └── app\_theme.dart # App theme settings
+
+│ └── utils/
+
+│ └── helpers.dart # Optional utility functions
+
 ├── data/
-│   ├── datasources/
-│   │   └── property_data_source.dart # Loads hardcoded JSON data
-│   ├── models/
-│   │   └── property_model.dart      # JSON serializable property model
-│   └── repositories/
-│       ├── property_repository.dart  # Repository interface
-│       └── property_repository_impl.dart # Repository implementation
+
+│ ├── datasources/
+
+│ │ └── property\_data\_source.dart # Loads hardcoded JSON data
+
+│ ├── models/
+
+│ │ └── property\_model.dart # JSON serializable property model
+
+│ └── repositories/
+
+│ ├── property\_repository.dart # Repository interface
+
+│ └── property\_repository\_impl.dart # Repository implementation
+
 ├── domain/
-│   ├── entities/
-│   │   └── property.dart            # Business entity for properties
-│   ├── repositories/
-│   │   └── property_repository.dart  # Repository abstraction
-│   └── usecases/
-│       └── get_properties.dart       # Business logic use case
+
+│ ├── entities/
+
+│ │ └── property.dart # Business entity for properties
+
+│ ├── repositories/
+
+│ │ └── property\_repository.dart # Repository abstraction
+
+│ └── usecases/
+
+│ └── get\_properties.dart # Business logic use case
+
 ├── presentation/
-│   ├── controllers/
-│   │   └── home_controller.dart      # Manages home page state
-│   ├── pages/
-│   │   ├── home_page.dart            # Home screen UI
-│   │   └── detail_page.dart          # Property detail screen UI
-│   └── widgets/
-│       ├── property_card.dart        # Reusable property card widget
-│       └── custom_app_bar.dart       # Optional reusable AppBar widget
-└── main.dart                         # App entry point
+
+│ ├── controllers/
+
+│ │ └── home\_controller.dart # Manages home page state
+
+│ ├── pages/
+
+│ │ ├── home\_page.dart # Home screen UI
+
+│ │ └── detail\_page.dart # Property detail screen UI
+
+│ └── widgets/
+
+│ ├── property\_card.dart # Reusable property card widget
+
+│ └── custom\_app\_bar.dart # Optional reusable AppBar widget
+
+└── main.dart # App entry point
 Assets are stored outside lib:
 textassets/
+
 └── data/
-    └── properties.json              # Hardcoded property data
+
+└── properties.json # Hardcoded property data
+
 Dependencies
 The app relies on the following packages (versions based on August 19, 2025; check pubspec.yaml for exact versions):
 
@@ -119,3 +159,4 @@ Integrate a real API instead of hardcoded JSON.
 Add location-based filtering in the dropdown.
 Implement "Rent Now" functionality with payment integration.
 Add user authentication and bookmark features.
+
